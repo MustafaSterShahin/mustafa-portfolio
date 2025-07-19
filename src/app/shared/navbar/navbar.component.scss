@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1f2937; // koyu gri
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        color: #2563eb; // mavi tonu
+      }
+    }
+  }
+
+  /* Mobil için responsive düzenleme */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Mobilde gizle */
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    /* İstersen hamburger menü ekleyebilirsin */
+  }
+}
