@@ -16,7 +16,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class HomeComponent {
   typedText = '';
-fullText = 'Merhaba, ben Mustafa Şahin 👋';
+fullText = 'Hello, I\'m Mustafa 👋';
 
 ngOnInit() {
   let i = 0;

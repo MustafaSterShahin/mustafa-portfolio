@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
@@ -23,8 +23,7 @@ export class ContactComponent {
   onSubmit() {
     if (this.contactForm.valid) {
       console.log('Form Data:', this.contactForm.value);
-      alert('Mesajınız başarıyla gönderildi!');
-
+      alert('Your message has been sent successfully!');
       this.contactForm.reset();
     }
   }

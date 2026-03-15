@@ -50,7 +50,15 @@
         font-size: 0.85rem;
       }
     }
-
+    .project-status {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
     .project-links {
       a {
         text-decoration: none;
